@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OJP
+    xmlns="http://www.vdv.de/ojp"
+    xmlns:siri="http://www.siri.org.uk/siri"
+    version="2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.vdv.de/ojp ../../../../OJP4/OJP.xsd"
+>
+    <OJPRequest>
+        <siri:ServiceRequest>
+            <siri:RequestTimestamp>NOW</siri:RequestTimestamp>
+            <siri:RequestorRef>vbzli</siri:RequestorRef>
+            <OJPStopEventRequest>
+                <siri:RequestTimestamp>NOW</siri:RequestTimestamp>
+                <Location>
+                    <PlaceRef>
+                        <StopPlaceRef>8502572</StopPlaceRef>
+                    </PlaceRef>
+                </Location>
+                <Params>
+                    <NumberOfResults>10</NumberOfResults>
+                    <StopEventType>departure</StopEventType>
+                    <IncludePreviousCalls>false</IncludePreviousCalls>
+                    <IncludeOnwardCalls>false</IncludeOnwardCalls>
+                    <UseRealtimeData>full</UseRealtimeData>
+                </Params>
+            </OJPStopEventRequest>
+        </siri:ServiceRequest>
+    </OJPRequest>
+</OJP>
